@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Horváth Anna">
+    <meta name="description" content="Horror regény ismertető oldal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <title>Horror irodalom</title>
+
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery-3.7.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Yatra+One&display=swap" rel="stylesheet">
+    <script src="jquery-3.7.1.js" type="text/javascript">
+    </script>
+    <script src="slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".center").slick({
+                dots: true,
+                infinite: true,
+                centerMode: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '30px',
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '30px',
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>A modern horror kezdete</h1>
+        <nav>
+            <ul>
+                <li id="current"><a href="#">Főoldal</a></li>
+                <li><a href="frankenstein.html">Frankenstein</a></li>
+                <li><a href="jekyll.html">Jekyll és Hyde</a></li>
+                <li><a href="quiz.html">Kvíz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Mi is az a horror?</h2>
+            <p>A horror olyan irodalmi műfaj, amelynek középpontjában a félelem áll. Habár alapvetően irodalmi művekről
+                van szó,
+                megjelenhet más ágazatokban is, melyek közül a legtipikusabb a film. </p>
+            <p>A latin eredetű angol szó jelentése iszonyat, rémület. </p>
+            <p>A horror különálló műfaj, aminek semmi köze sincs a háborúk vagy természeti katasztrófák borzalmaihoz.
+                Habár ezek
+                önmagukban jelentenek szörnyűséges dolgokat, irodalmi értelemben nincs kapcsolatuk a horror műfajával és
+                témáival. </p>
+            <p>A horror célja az emberi félelemmel való játék, a félelemkeltés. Fontos tulajdonsága, hogy mint irodalmi
+                műfaj, az olvasó önmaga is belemegy ebbe a játékba, miközben végig tudja, hogy félelme csupán a képzelet
+                szülötte és így alaptalan. A horrornak nem célja semmilyen erkölcsi tanulság elérése, pusztán a
+                borzongással keltett szórakoztatás. Ebből a szempontból a horror igen eltér a klasszikus irodalmi
+                műfajoktól. </p>
+            <p>A horror viszonylag új keletű műfaj, ami először a 18. században kezdett megjelenni. Előfutára az angol
+                gótikus regény, a német Schauer-roman és a francia roman noir volt. Habár bizonyos formában a
+                tizennyolcadik század előtt is létezett már a horror műfaja, modern alakjában és témáival akkortájt
+                jelent csak meg.</p>
+            <p>A modern horror alapvetően szakított a gótikus regényekkel. Ezekben a sötét oldalnak nem szerepel világos
+                ellenpárja és a gonosz erőket nem ellensúlyozza egy hasonló hatalmú jó. A horror a visszavonhatatlansága
+                és megmásíthatatlansága miatt lesz alapvető és elemi. A főhősöknek egyedül kell szembenézni a
+                borzalmakkal és gyakran csak esélytelen áldozatok lesznek belőlük. A történet végét általában nem zárja
+                megnyugtató lezárás, győzelem vagy happy end. Az olvasóban megmarad a történet által keltett feszültség.
+                Mivel a történet szereplői sem igazi hősök, ezért bukásuk sem jár együtt tragédiával vagy katarzissal,
+                bár maga a téma lehet tragikus. </p>
+        </article>
+        <article class="galeria">
+            <h2>Híres horror regények</h2>
+            <section class="center slider">
+                <div><img src="img/cover1.jpg" alt="kep1" title="Frankenstein"></div>
+                <div><img src="img/cover2.jpg" alt="kep2" title="Jekyll és Hyde"></div>
+                <div><img src="img/cover3.jpg" alt="kep3" title="A láthatatlan ember"></div>
+            </section>
+        </article>
+        <article>
+            <h2>Horror jellemzői</h2>
+            <p>Két alapvető csoportra lehet felosztani a horror témájú műveket. Természetesen a határvonalak sokszor
+                elmosódottak közöttük, hiszen az írók vegyesen alkalmazzák ezek elemeit.</p>
+            <p>A műfaj egyik része a pszichológiai vonatkozását ragadja meg. Ezekben a művekben hangsúlyosabb a
+                történések lelki vonatkozása. Habár gyakran nem is történik látványos borzalom, a cselekmény, illetve az
+                azok mögött megbúvó és felsejlő erők félelemmel töltik el az olvasót. Gyakran nem is lehet fényt
+                deríteni arra, hogy mi a pontos kiváltó ok, és sokszor pont ez okozza a zavaró hatást. Ebbe a pszichikai
+                kategóriába tartoznak például Howard Phillips Lovecraft vagy Edgar Allan Poe művei. A számítógépes
+                játékok között a Dan Salvato által alkotott Doki Doki Literature Club tartozik ezek közé. A filmek
+                között ezt gyakran nem is horrornak, hanem thrillernek hívják. Itt megemlíthető a Twin Peaks vagy az
+                Örvény című filmsorozat. Ennek a stílusnak a régies neve "Rémtörténet". </p>
+        </article>
+    </main>
+    <footer>
+        <p>Horváth Anna gyakorló oldala - 2024</p>
+        <p>Szövegek és képek forrása: Wikipédia</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Horváth Anna">
+    <meta name="copyright" content="???">
+    <meta name="description" content="Horror regény ismertető oldal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <title>Horror</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Yatra+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="frankenstein.html">Frankenstein</a></li>
+                <li><a href="jekyll.html">Jekyll és Hyde</a></li>
+                <li id="current"><a href="#">Kvíz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="quiz">
+            <h2>Mennyire ismered a 19. századi horror regényeket? Teszteld tudásodat!</h2>
+            <form id="myform" novalidate>
+
+                <fieldset>
+                    <legend>Frankenstein</legend>
+                    <p>Melyik Bibblia szereplővel azonossítja magát a teremtmény?</p>
+                    <input type="radio" id="kain" name="biblia" value="kain"> <label for="kain">Káin</label>
+                    <input type="radio" id="adam" name="biblia" value="adam"> <label for="adam">Ádám</label>
+                    <input type="radio" id="jonas" name="biblia" value="jonas"> <label for="jonas">Jónás</label>
+                    <input type="radio" id="fiu" name="biblia" value="fiu"> <label for="fiu">A tékozló fiú</label>
+                    <p><label for="narrator">Hány elbeszélője van a regénynek?</label></p>
+                    <input type="number" id="narrator" name="narrator" min="0" max="20">
+                    <p>Kiket ölt meg a szörny saját kezüleg?</p>
+                    <p><input type="checkbox" name="justine" id="justine"><label for="justine">Justine Moritz</label>
+                    </p>
+                    <p><input type="checkbox" name="clerval" id="clerval"><label for="clerval">Henry Clerval</label></p>
+                    <p><input type="checkbox" name="elizabeth" id="elizabeth"><label for="elizabeth">Elizabeth
+                            Lavenza</label></p>
+                    <p><input type="checkbox" name="victor" id="victor"><label for="victor">Victor Frankenstein</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Drakula</legend>
+                    <label for="iro">Ki írta a regényt?</label>
+                    <select id="iro">
+                        <option>---</option>
+                        <option>Robert Lewis Stevenson</option>
+                        <option>H. P. Lovecraft</option>
+                        <option>Mary Shelley</option>
+                        <option>Bram Stoker</option>
+                        <option>Edgar Allan Poe</option>
+                    </select>
+                    <p>Melyek Drakula gyengeségei az eredeti könyvben?</p>
+                    <p><input type="checkbox" name="viz" id="viz"><label for="viz">Folyó víz</label>
+                    </p>
+                    <p><input type="checkbox" name="fej" id="fej"><label for="fej">Lefejezés</label></p>
+                    <p><input type="checkbox" name="hagyma" id="hagyma"><label for="hagyma">Fokhagyma</label></p>
+                    <p><input type="checkbox" name="arany" id="arany"><label for="arany">Arany</label>
+                    </p>
+                    <p>Mi Jonahthan Harker foglalkozása?</p>
+                    <input type="radio" id="vadasz" name="munka" value="vadasz"> <label for="vadasz">Vámpír
+                        vadász</label>
+                    <input type="radio" id="doktor" name="munka" value="doktor"> <label for="doktor">Doktor</label>
+                    <input type="radio" id="ugyved" name="munka" value="ugyved"> <label for="ugyved">Ügyvéd</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Jekyll és Hyde</legend>
+                    <p>Ki a regény főszereplője?</p>
+                    <input type="radio" id="gabriel" name="foszerep" value="gabriel"> <label for="gabriel">Gabriel
+                        Utterson</label>
+                    <input type="radio" id="jekyll" name="foszerep" value="jekyll"> <label for="jekyll">Doktor
+                        Jekyll</label>
+                    <input type="radio" id="hyde" name="foszerep" value="hyde"> <label for="hyde">Mr. Hyde</label>
+                    <p>Miért körözi Mr. Hyde-ot a rendörség?</p>
+                    <input type="radio" id="tuz" name="korozes" value="tuz"> <label for="tuz">Gyújtogatásért.</label>
+                    <input type="radio" id="ado" name="korozes" value="ado"> <label for="ado">Adócsalásért.</label>
+                    <input type="radio" id="gyilkos" name="korozes" value="gyilkos"> <label for="gyilkos">Megölt
+                        valakit.</label>
+
+                    <p>Ki hal meg a novella végéig?</p>
+                    <p><input type="checkbox" name="gabriel2" id="gabriel2"><label for="gabriel2">Gabriel
+                            Utterson</label></p>
+                    <p><input type="checkbox" name="jekyll2" id="jekyll2"><label for="jekyll2">Dr. Jekyll</label></p>
+                    <p><input type="checkbox" name="lanyon" id="lanyon"><label for="lanyon">Dr. Lanyon</label></p>
+                    <p><input type="checkbox" name="carew" id="carew"><label for="carew">Danvers Carew</label>
+                    </p>
+
+                </fieldset>
+                <div id="ertekeles">
+
+                </div>
+                <input type="button" value="Kiéertékelés" id="quiz_eredmeny">
+                <input type="reset" value="Újra kezdés">
+                <input type="button" value="Helyes válaszok" id="quiz_jo">
+
+            </form>
+        </div>
+        <div class="hirlevel">
+            <h2>Iratkozz fel hírlevelünkre!</h2>
+            <form action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" method="post" id="hirlevel_form"
+                novalidate>
+                <table>
+                    <tr>
+                        <td><label for="nev">Neved: </label></td>
+                        <td><input type="text" id="nev" name="nev" size="17"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">E-mail címed:</label></td>
+                        <td><input type="text" id="mail" name="mail" size="17"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="szul">Születési dátumod:</label></td>
+                        <td> <input type="date" id="szul" name="szul"></td>
+                    </tr>
+                    <tr>
+                        <td>Nemed:</td>
+                        <td class='container'>
+                            <input type="radio" id="f" name="nem" value="f"><label for="f">Férfi</label>
+                            <input type="radio" id="n" name="nem" value="n"><label for="n">Nő</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="konyvdb">Hány klasszikus horror regényt olvastál eddig?</label></td>
+                        <td><input type="number" id="konyvdb" name="konyvdb" value="0" min=0></td>
+                    </tr>
+                    <tr>
+                        <td><label for="kedvenc">Melyik a kedvenc horror regényed?</label></td>
+                        <td> <input list="regenyek" id="kedvenc" size="17" name="kedvenc"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="otlet">Milyen tartalmakat látnál szivesen hírlevelünkben?</label></td>
+                        <td><textarea id="otlet" name="otlet" rows="7" cols="40"></textarea></td>
+                    </tr>
+                </table>
+                <p class='container'><input type="checkbox" id="egyetert" name="egyetert"><label
+                        for="egyetert">Elgogadom, hogy ez a
+                        weboldal tárolja a személyes adataimat.</label>
+                </p>
+                <datalist id="regenyek">
+                    <option>Frankenstein</option>
+                    <option>Jekyll és Hyde</option>
+                    <option>A láthatatlan ember</option>
+                    <option>Drakula</option>
+                    <option>A Cthulhu-mítosz</option>
+                    <option>Dorian Gray arcképe</option>
+                </datalist>
+                <input type="submit" value="Beküldés"><input type="reset" value="Válaszok törlése">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Horváth Anna gyakorló oldala - 2024</p>
+        <p>Szövegek és képek forrása: Wikipédia</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        // Ellenőrzi, hogy a kitöltő 16 évesnél idősebb legyen
+        jQuery.validator.addMethod("kor_valid", function (value, element) {
+            let kor_min = new Date();
+            kor_min.setFullYear(kor_min.getFullYear() - 16);
+            let u_ido = new Date(Number(value.substring(0, 4)), Number(value.substring(5, 7)) - 1, Number(value.substring(8, 10)));
+            return kor_min > u_ido
+        }, "A feliratkozáshoz legalább 16 évesnek kell lenned.");
+
+        $(document).ready(function () {
+            $("#hirlevel_form").validate({
+                rules: {
+                    nev: {
+                        required: true,
+                        minlength: 3,
+                        maxlenght: 70
+                    },
+                    mail: {
+                        required: true,
+                        email: true,
+                    },
+                    szul: {
+                        kor_valid: true,
+                        required: true
+                    },
+                    konyvdb: "required",
+                    kedvenc: "required",
+                    egyetert: "required",
+                    nem: "required",
+                    otlet: { minlength: 5 }
+
+                },
+                messages: {
+                    nev: {
+                        required: "Kérlek addj meg egy nevet!",
+                        minlength: "Sajnos ez a név túl rövid",
+                        maxlenght: "Sajnos ez a név túl hosszú!"
+                    },
+                    mail: {
+                        required: "Kérlek adj meg egy e-mail címet!",
+                        email: "Sajnos ez az e-mail rossz!"
+                    },
+                    szul: {
+                        required: "Kérlek add meg az életkorodat!",
+                        kor_valid: "A feliratkozáshoz legalább 16 évesnek kell lenned!"
+                    },
+                    konyvdb: "Kérlek válaszolj erre a kérdésre!",
+                    kedvenc: "Kérlek válaszolj erre a kérdésre!",
+                    nem: "Kérlek válaszolj erre a kérdésre!",
+                    egyetert: "Igazold a továbblépéshez!",
+                    otlet: "Kérlek írj egy hosszabb ötletet!"
+                },
+                //innen átvett kód: https://codepen.io/prasanthmj/pen/eYWYGM
+                errorPlacement: function (error, element) {
+                    if (element.is(":radio") || element.is(":checkbox")) {
+                        error.appendTo(element.parents('.container'));
+                    }
+                    else { // This is the default behavior 
+                        error.insertAfter(element);
+                    }
+                }
+
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

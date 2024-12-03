@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+:root {
+    --margin-size: 1%;
+    --bc-dark: #24283B;
+    --bc-light: #484655;
+    --text-color: #A9B1D6;
+    --ac-color: #FADA5E;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bc-dark);
+}
+
+header {
+    overflow: hidden;
+    background-image: url("img/bc.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    text-align: center;
+    font-family: "Yatra One", system-ui;
+    font-size: 40px;
+    padding: 1em;
+    color: var(--ac-color)
+}
+
+
+/*NAV*/
+header nav {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--bc-dark) 100%);
+    overflow: hidden;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0 var(--margin-size);
+}
+
+header nav ul li a {
+    text-align: center;
+    font-family: "Yatra One", system-ui;
+    font-size: 110%;
+    background-color: var(--ac-color);
+    color: var(--bc-dark);
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 0.5vh 0;
+
+    transition-duration: 0.5s;
+    transition-property: background-color, color;
+}
+
+header nav ul li#current a {
+    background-color: #484655;
+    color: var(--ac-color);
+}
+
+header nav ul li:hover a,
+header nav ul li#current:hover a {
+    background-color: var(--text-color);
+    color: var(--bc-dark)
+}
+
+/*MAIN*/
+main {
+    overflow: hidden;
+    min-height: 100%;
+    background-color: var(--bc-dark);
+}
+
+main aside,
+main article {
+    margin: var(--margin-size);
+    overflow: hidden;
+    color: var(--text-color);
+    border-radius: 5px;
+}
+
+main article h2, main div h2 {
+    font-family: "Yatra One", system-ui;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--ac-color);
+    margin: 0.25em 4% 0;
+}
+
+main article p {
+    margin: 0 4% 0.25em;
+    text-align: justify;
+}
+
+main article.info {
+    background-color: var(--text-color);
+    color: var(--bc-dark);
+
+    border-radius: 18px 18px 6px 6px;
+}
+
+main article.info img {
+    width: 100%;
+    max-height: 30vh;
+    object-fit: cover;
+    object-position: 0 20%;
+    border-bottom: 3px var(--bc-dark) solid;
+}
+
+main article.info div p{
+    text-align: center;
+}
+main article.info div p:nth-child(odd){
+    font-weight: bold;
+    font-family: "Yatra One", system-ui;
+}
+
+main article.info hr
+{margin:0 15%;border-color:var(--bc-dark)}
+main article.info p.emp{
+    font-weight: bolder;
+    margin-top: 0.25em;
+    text-align: center;
+}
+main article.info ol li a{
+    text-align: center;
+    color: var(--bc-dark);
+    text-decoration: none;
+    display: block;
+}
+
+main article.info ol li:hover a{
+    background-color: var(--bc-light);
+    color:var(--text-color)
+}
+
+
+/*MAIN ASIDE*/
+main aside.idezet {
+    border-bottom: 3px var(--text-color) solid;
+    font-family: "Yatra One", system-ui;
+    font-weight: lighter;
+}
+
+main aside p {
+    margin: 0 10% 1vh;
+    text-align: justify;
+    font-style: italic;
+}
+
+/*MAIN DIV*/
+main div.container article:nth-child(odd) {
+    background-color: var(--bc-light);
+}
+
+/*MAIN GALLERIA*/
+
+.slider {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.slick-slide {
+    margin: 0px 5px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: var(--text-color);
+
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+.slick-dots li button:before{
+    color:var(--text-color) !important;
+    opacity: 40% !important;
+}
+.slick-dots li.slick-active button:before{
+    opacity: 100% !important;
+}
+/*FOOTER*/
+footer {
+    text-align: center;
+    padding-top: 0.5em;
+    margin-top: auto;
+    background-color: var(--text-color);
+    color: var(--bc-dark)
+}
+
+/*quiz*/
+main div.quiz, main div.hirlevel {
+    margin: calc(var(--margin-size)/2);
+    background-color: var(--text-color);
+    border-radius: 15px;
+    color: var(--bc-dark);
+    padding: 1.5vw;
+    flex:1 1 calc(50% - var(--margin-size))
+}
+input:checked{
+    accent-color:var(--bc-light)
+}
+
+main div.quiz fieldset{
+    background-color: #efefef4f;
+    margin:1% 0;
+    padding: 1%;
+}
+main div.quiz fieldset legend{
+    margin-left: 1em;
+}
+
+main div.quiz input[type="number"],
+main div.quiz select {
+    border-radius: 6px;
+    background-color: var(--text-color);
+    border-color: var(--bc-light);
+    padding: 2px;
+}
+
+main div.quiz input[type="number"]:focus, main div.quiz select:focus{
+    border-color: var(--ac-color);
+    outline: none;
+}
+
+main div.quiz input[type="checkbox"]
+{
+    margin-right: 2px;
+}
+
+main div.quiz input[type="button"], main div.quiz input[type="reset"]{
+    padding: 0.5% 1%;
+    margin-right: 1%;
+    border-color: var(--bc-dark);
+    border-radius: 4px;
+    background-color: var(--bc-light);
+    color:var(--text-color)
+}
+
+/*HÍRLEVÉL*/
+main div.hirlevel textarea {
+    resize: none;
+}
+main div h2{
+    margin: 0;
+    padding: 0;
+}
+main div.hirlevel table{
+    border-collapse: collapse;
+    width: 100%;
+
+}
+main div.hirlevel table tr:nth-child(odd)
+{background-color: #efefef4f;}
+main div.hirlevel table tr td{
+width: 30%;
+padding: 1% 0;
+color:var(--bc-dark)
+}
+main div.hirlevel table tr td:nth-child(2){
+    width: 70%;
+}
+main div.hirlevel input{
+    margin-right: 0.5em;
+}
+main div.hirlevel input[type="submit"],main div.hirlevel input[type="reset"]{
+    padding: 0.5% 1%;
+    margin-right: 1%;
+    border-color: var(--bc-dark);
+    border-radius: 4px;
+    background-color: var(--bc-light);
+    color:var(--text-color)
+}
+main div.hirlevel input,
+main div.hirlevel textarea {
+    border-radius: 6px;
+    background-color: var(--text-color);
+    border-color: var(--bc-light);
+    padding: 2px;
+}
+
+main div.hirlevel input:focus,
+main div.hirlevel textarea:focus{
+    border-color: var(--ac-color);
+    outline: none;
+}
+
+main div.hirlevel p.container{
+    padding: 1% 0;
+}
+label.error{color: var(--bc-light)}
+
+@media only screen and (min-width: 600px) {
+
+    header nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: var(--margin-size);
+    }
+
+    header nav ul li {
+        flex: 1 1 calc(25% - var(--margin-size))
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main article h2{
+        text-align: left;
+    }
+    main aside.idezet {
+        flex: 1 1 100%
+    }
+
+    main article {
+        flex: 1 1 calc(50% - 2*var(--margin-size))
+    }
+
+    main article.jekyll{
+        order:2
+    }
+
+    /* main section{flex: 1 1 calc(40% - 2*var(--margin-size))} */
+
+    main article.info {
+        flex: 1 1 calc(35% - 2*var(--margin-size))
+    }
+
+    main div.container {
+        flex: 1 1 calc(65% - 2*var(--margin-size));
+        margin: var(--margin-size);
+    }
+
+    main div.container article {
+        margin: 0;
+    }
+
+    /* .slider {
+        max-width: 70%;
+        margin: 0 15%;
+    } */
+    main article.galeria
+    {flex:1 1 calc(40% - 2*var(--margin-size));}
+
+}
+
+@media only screen and (min-width:768px) {
+
+    /* :root{--margin-size:1vh} */
+
+
+    main article {
+        flex: 1 1 calc(65% - 2*var(--margin-size))
+    }
+
+    main article.galeria {
+        flex: 1 1 calc(35% - 2*var(--margin-size))
+    }
+
+    main article.info {
+        flex: 1 1 calc(25% - 2*var(--margin-size))
+    }
+
+    main div.container {
+        flex: 1 1 calc(75% - 2*var(--margin-size));
+    }
+
+}
