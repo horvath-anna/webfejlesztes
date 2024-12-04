@@ -1,5 +1,5 @@
 Oldal készítője: Horváth Anna
-oldal url címe:
+oldal url címe: https://horvath-anna.github.io/webfejlesztes/
 A weboldal klasszikus horror regényeket mutat be.
 
 A saját javascript kód a kvíz oldalon található meg. Egy kvízt ellenőriz le és megmutatja a helyes válaszokat.
