@@ -12,7 +12,7 @@ Máshonnan átvett kódok:
 footer alulra igazítása - https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14
 jQuery validáláshoz átvett kód : https://codepen.io/prasanthmj/pen/eYWYGM
 nav háttérben css gradient: - https://www.colorzilla.com/gradient-editor/
-cc flex elemek szélessge margin változóval: - tantárgyi weboldalról
+ccs flex elemek szélessge margin változóval: - tantárgyi weboldalról
 
 A felhasznált szövegek és képek forrása a wikipédia.
 A header háttérképe innen van: - https://www.pexels.com/hu-hu/foto/1061623/
