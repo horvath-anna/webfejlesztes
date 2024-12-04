@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
 :root {
     --margin-size: 1%;
@@ -31,7 +32,8 @@ header h1 {
     font-family: "Yatra One", system-ui;
     font-size: 40px;
     padding: 1em;
-    color: var(--ac-color)
+    color: var(--ac-color);
+    text-shadow: 2px 2px black
 }
 
 
@@ -90,7 +92,8 @@ main article {
     border-radius: 5px;
 }
 
-main article h2, main div h2 {
+main article h2,
+main div article h2 {
     font-family: "Yatra One", system-ui;
     text-align: center;
     text-decoration: underline;
@@ -118,31 +121,36 @@ main article.info img {
     border-bottom: 3px var(--bc-dark) solid;
 }
 
-main article.info div p{
+main article.info div p {
     text-align: center;
 }
-main article.info div p:nth-child(odd){
+
+main article.info div p:nth-child(odd) {
     font-weight: bold;
     font-family: "Yatra One", system-ui;
 }
 
-main article.info hr
-{margin:0 15%;border-color:var(--bc-dark)}
-main article.info p.emp{
+main article.info hr {
+    margin: 0 15%;
+    border-color: var(--bc-dark)
+}
+
+main article.info p.emp {
     font-weight: bolder;
     margin-top: 0.25em;
     text-align: center;
 }
-main article.info ol li a{
+
+main article.info ol li a {
     text-align: center;
     color: var(--bc-dark);
     text-decoration: none;
     display: block;
 }
 
-main article.info ol li:hover a{
+main article.info ol li:hover a {
     background-color: var(--bc-light);
-    color:var(--text-color)
+    color: var(--text-color)
 }
 
 
@@ -153,7 +161,7 @@ main aside.idezet {
     font-weight: lighter;
 }
 
-main aside p {
+main aside.idezet p {
     margin: 0 10% 1vh;
     text-align: justify;
     font-style: italic;
@@ -192,13 +200,16 @@ main div.container article:nth-child(odd) {
 .slick-current {
     opacity: 1;
 }
-.slick-dots li button:before{
-    color:var(--text-color) !important;
+
+.slick-dots li button:before {
+    color: var(--text-color) !important;
     opacity: 40% !important;
 }
-.slick-dots li.slick-active button:before{
+
+.slick-dots li.slick-active button:before {
     opacity: 100% !important;
 }
+
 /*FOOTER*/
 footer {
     text-align: center;
@@ -209,24 +220,27 @@ footer {
 }
 
 /*quiz*/
-main div.quiz, main div.hirlevel {
+main div.quiz,
+main div.hirlevel {
     margin: calc(var(--margin-size)/2);
     background-color: var(--text-color);
     border-radius: 15px;
     color: var(--bc-dark);
     padding: 1.5vw;
-    flex:1 1 calc(50% - var(--margin-size))
-}
-input:checked{
-    accent-color:var(--bc-light)
+    flex: 1 1 calc(50% - var(--margin-size))
 }
 
-main div.quiz fieldset{
+input:checked {
+    accent-color: var(--bc-light)
+}
+
+main div.quiz fieldset {
     background-color: #efefef4f;
-    margin:1% 0;
+    margin: 1% 0;
     padding: 1%;
 }
-main div.quiz fieldset legend{
+
+main div.quiz fieldset legend {
     margin-left: 1em;
 }
 
@@ -238,59 +252,70 @@ main div.quiz select {
     padding: 2px;
 }
 
-main div.quiz input[type="number"]:focus, main div.quiz select:focus{
+main div.quiz input[type="number"]:focus,
+main div.quiz select:focus {
     border-color: var(--ac-color);
     outline: none;
 }
 
-main div.quiz input[type="checkbox"]
-{
+main div.quiz input[type="checkbox"] {
     margin-right: 2px;
 }
 
-main div.quiz input[type="button"], main div.quiz input[type="reset"]{
+main div.quiz input[type="button"],
+main div.quiz input[type="reset"] {
     padding: 0.5% 1%;
     margin-right: 1%;
     border-color: var(--bc-dark);
     border-radius: 4px;
     background-color: var(--bc-light);
-    color:var(--text-color)
+    color: var(--text-color)
 }
 
 /*HÍRLEVÉL*/
 main div.hirlevel textarea {
     resize: none;
 }
-main div h2{
+
+main div h2 {
     margin: 0;
     padding: 0;
 }
-main div.hirlevel table{
+
+main div.hirlevel table {
     border-collapse: collapse;
     width: 100%;
 
 }
-main div.hirlevel table tr:nth-child(odd)
-{background-color: #efefef4f;}
-main div.hirlevel table tr td{
-width: 30%;
-padding: 1% 0;
-color:var(--bc-dark)
+
+main div.hirlevel table tr:nth-child(odd) {
+    background-color: #efefef4f;
 }
-main div.hirlevel table tr td:nth-child(2){
+
+main div.hirlevel table tr td {
+    width: 30%;
+    padding: 1% 0;
+    color: var(--bc-dark)
+}
+
+main div.hirlevel table tr td:nth-child(2) {
     width: 70%;
 }
-main div.hirlevel input{
+
+main div.hirlevel input {
     margin-right: 0.5em;
 }
-main div.hirlevel input[type="submit"],main div.hirlevel input[type="reset"]{
+
+main div.hirlevel input[type="submit"],
+main div.hirlevel input[type="reset"] {
     padding: 0.5% 1%;
     margin-right: 1%;
     border-color: var(--bc-dark);
     border-radius: 4px;
     background-color: var(--bc-light);
-    color:var(--text-color)
+    color: var(--text-color)
 }
+
 main div.hirlevel input,
 main div.hirlevel textarea {
     border-radius: 6px;
@@ -300,15 +325,18 @@ main div.hirlevel textarea {
 }
 
 main div.hirlevel input:focus,
-main div.hirlevel textarea:focus{
+main div.hirlevel textarea:focus {
     border-color: var(--ac-color);
     outline: none;
 }
 
-main div.hirlevel p.container{
+main div.hirlevel p.container {
     padding: 1% 0;
 }
-label.error{color: var(--bc-light)}
+
+label.error {
+    color: var(--bc-light)
+}
 
 @media only screen and (min-width: 600px) {
 
@@ -327,22 +355,26 @@ label.error{color: var(--bc-light)}
         flex-wrap: wrap;
     }
 
-    main article h2{
+    main div.container article h2, main article h2 {
         text-align: left;
     }
+
+   main article.galeria h2 {
+        text-align: center;
+    }
+
     main aside.idezet {
         flex: 1 1 100%
     }
 
-    main article {
+    main article{
         flex: 1 1 calc(50% - 2*var(--margin-size))
     }
 
-    main article.jekyll{
-        order:2
+    main article.jekyll {
+        order: 2
     }
 
-    /* main section{flex: 1 1 calc(40% - 2*var(--margin-size))} */
 
     main article.info {
         flex: 1 1 calc(35% - 2*var(--margin-size))
@@ -357,20 +389,13 @@ label.error{color: var(--bc-light)}
         margin: 0;
     }
 
-    /* .slider {
-        max-width: 70%;
-        margin: 0 15%;
-    } */
-    main article.galeria
-    {flex:1 1 calc(40% - 2*var(--margin-size));}
+    main article.galeria {
+        flex: 1 1 calc(40% - 2*var(--margin-size));
+    }
 
 }
 
 @media only screen and (min-width:768px) {
-
-    /* :root{--margin-size:1vh} */
-
-
     main article {
         flex: 1 1 calc(65% - 2*var(--margin-size))
     }
